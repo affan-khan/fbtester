@@ -86,6 +86,6 @@ if (isset($accessToken)) {
   	// Now you can redirect to another page and use the access token from $_SESSION['facebook_access_token']
 } else {
 	$helper = $fb->getRedirectLoginHelper();
-	$loginUrl = $helper->getLoginUrl('https://sleepy-tor-48565.herokuapp.com/fbtest/index.php', $permissions);
+	$loginUrl = $helper->getLoginUrl('https://sleepy-tor-48565.herokuapp.com/', $permissions);
 	echo "<script>window.top.location.href='".$loginUrl."'</script>";
 }
